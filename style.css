@@ -97,7 +97,7 @@ button:hover {
   body {
     background-size: auto 100%;
     background-position: center center;
-    animation: mobileBackgroundMove 18s ease-in-out infinite alternate;
+    animation: mobileBackgroundMove 10s ease-in-out infinite alternate;
   }
 }
 
