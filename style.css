@@ -168,3 +168,15 @@ button:hover {
     transform: translateY(0);
   }
 }
+
+.back-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: #22c55e;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  opacity: 0.8;
+}
