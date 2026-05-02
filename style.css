@@ -103,10 +103,10 @@ button:hover {
 
 @keyframes mobileBackgroundMove {
   from {
-    background-position: center center;
+    background-position: 45% center;
   }
 
   to {
-    background-position: center 6%;
+    background-position: 55% center;
   }
 }
