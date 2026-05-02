@@ -34,6 +34,11 @@ p {
   margin: 0.5rem 0;
 }
 
+p:first-of-type {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -79,6 +84,7 @@ button {
 button:hover {
   transform: translateY(-2px);
   opacity: 0.95;
+  box-shadow: 0 8px 30px rgba(34, 197, 94, 0.5);
 }
 
 @keyframes backgroundMove {
@@ -108,5 +114,57 @@ button:hover {
 
   to {
     background-position: 55% center;
+  }
+}
+
+.sequence span {
+  opacity: 0;
+  display: inline-block;
+  margin-right: 6px;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.sequence span:nth-child(1) {
+  animation-delay: 0.4s;
+}
+
+.sequence span:nth-child(2) {
+  animation-delay: 0.8s;
+}
+
+.sequence span:nth-child(3) {
+  animation-delay: 1.2s;
+}
+
+.sequence span {
+  opacity: 0;
+  display: inline-block;
+  margin-right: 6px;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.sequence span:nth-child(1) {
+  animation-delay: 0.4s;
+  color: #4ade80;
+}
+
+.sequence span:nth-child(2) {
+  animation-delay: 0.8s;
+  color: #60a5fa;
+}
+
+.sequence span:nth-child(3) {
+  animation-delay: 1.2s;
+  color: #c084fc;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
